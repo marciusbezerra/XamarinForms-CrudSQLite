@@ -13,7 +13,7 @@ namespace CrudSQLite
 		{
 			InitializeComponent();
 
-			MainPage = new CrudSQLite.MainPage();
+			MainPage = new CustomersPage();
 		}
 
 		protected override void OnStart()
