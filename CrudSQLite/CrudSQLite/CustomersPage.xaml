@@ -5,10 +5,10 @@
              Title="Cadastro de Clientes :(">
     <ContentPage.Content>
         <StackLayout Padding="20" Spacing="20">
-            <Entry x:Name="CustomerName" Placeholder="Nome do cliente" TextColor="White"></Entry>
-            <Entry x:Name="CustomerEmail" Placeholder="Email do Cliente" Keyboard="Email" TextColor="White"></Entry>
+            <Entry x:Name="CustomerName" Placeholder="Nome do cliente"></Entry>
+            <Entry x:Name="CustomerEmail" Placeholder="Email do Cliente" Keyboard="Email"></Entry>
             <Button x:Name="ButtonUpdate" Text="Salvar dados" Clicked="ButtonUpdateClicked"></Button>
-            <ListView x:Name="ListViewCustomers" BackgroundColor="White"></ListView>
+            <ListView x:Name="ListViewCustomers"></ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

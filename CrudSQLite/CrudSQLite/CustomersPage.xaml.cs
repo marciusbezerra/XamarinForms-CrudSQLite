@@ -37,6 +37,8 @@ namespace CrudSQLite
 				data.InsertCustomer(customer);
 				ListViewCustomers.ItemsSource = data.GetAllCustomers();
 			}
+			CustomerName.Text = "";
+			CustomerEmail.Text = "";
 		}
 	}
 }

@@ -1,4 +1,4 @@
-﻿using SQLite.Net;
+﻿using SQLite;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,7 +14,7 @@ namespace CrudSQLite
 		public Db()
 		{
 			var config = DependencyService.Get<IConfig>();
-			sqliteConnection = new SQLiteConnection(config.Platform, Path.Combine(config.SQLiteDirectory, "data.db3"));
+			sqliteConnection = new SQLiteConnection(Path.Combine(config.SQLiteDirectory, "data.db3"));
 			sqliteConnection.CreateTable<Customer>();
 		}
 
